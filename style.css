@@ -1,0 +1,15 @@
+#container{
+    align-items: center;
+    display: grid;
+    padding: 20px;
+    background-color: aqua;
+    justify-content: space-between;
+
+}
+.botao1{
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
