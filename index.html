@@ -3,37 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividade 19/03</title>
+    <title>Calculadora</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container">
-        <h1>Botões</h1>
-        
-        <input type="text" id="resp">
-        <div>
-            <button class="botao1" onclick="mudarCor('vermelho')">1 </button> 
-            <button> azul</button>
-            <button > preto</button>
-            <button > branco</button>
-            <button > amarelo</button>
-            <button > roxo</button>
-            <button > verde</button>
-            <button > laranja</button>
-            <button > rosa</button>
-            <button > cinza</button>
-            <button > marrom</button>
-            <button > magenta</button>
-            <button > lilás</button>
-            <button > azul escuro</button>
-            <button >verde claro</button>
-            <button >vermelho escuro</button>
-            <button >rosa claro</button>
-            <button >cinza claro</button>
-            <button >marrom claro</button>
-        </div>    
-
+    <div class="calculadora">
+        <input type="text" id="display" disabled>
+        <div class="teclado">
+            <button onclick="limpar()">C</button>
+            <button onclick="adicionarValor('/')">/</button>
+            <button onclick="adicionarValor('')"></button>
+            <button onclick="adicionarValor('-')">-</button>
+            
+            <button onclick="adicionarValor('7')">7</button>
+            <button onclick="adicionarValor('8')">8</button>
+            <button onclick="adicionarValor('9')">9</button>
+            <button onclick="adicionarValor('+')">+</button>
+            
+            <button onclick="adicionarValor('4')">4</button>
+            <button onclick="adicionarValor('5')">5</button>
+            <button onclick="adicionarValor('6')">6</button>
+            <button onclick="calcular()">=</button>
+            
+            <button onclick="adicionarValor('1')">1</button>
+            <button onclick="adicionarValor('2')">2</button>
+            <button onclick="adicionarValor('3')">3</button>
+            <button onclick="adicionarValor('0')" class="zero">0</button>
+            <button onclick="adicionarValor('.')">.</button>
+        </div>
     </div>
-    <script src="script.js" ></script>
+  <script src="script.js"></script>
 </body>
-</html>
