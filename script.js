@@ -1,9 +1,9 @@
-var memoria = ""
-var caixaTexto = document.getElementById('container')
+let display = document.getElementById("display");
 
-function mudarCor (valor) {
-    memoria += valor
-    console.log(memoria);
-    caixaTexto.value = memoria
+function adicionarValor(valor) {
+    display.value += valor;
+}
 
+function limpar() {
+    display.value = "";
 }
