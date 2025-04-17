@@ -1,4 +1,13 @@
-.calculadora {
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #222;
+  font-family: Arial, sans-serif;
+}
+
+#calculadora {
   background: #333;
   padding: 20px;
   border-radius: 10px;
@@ -7,14 +16,12 @@
   text-align: center;
 }
 
+
 #display {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   height: 50px;
   font-size: 2em;
-  text-align: center;
+  text-align: right;
   padding: 10px;
   border: none;
   outline: none;
@@ -23,6 +30,7 @@
   margin-bottom: 10px;
   border-radius: 5px;
 }
+
 
 #teclado {
   display: grid;
@@ -41,6 +49,7 @@ button {
   border-radius: 5px;
   transition: 0.3s;
 }
+
 
 button:hover {
   background: #555;
@@ -64,6 +73,3 @@ button:nth-child(4n):hover,
 button:last-child:hover {
   background: #e68900;
 }
-
-
-
