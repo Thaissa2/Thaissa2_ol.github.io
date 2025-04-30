@@ -24,14 +24,56 @@
         <fieldset>
             <label for="avaliacao">Nota artista</label>
             
-            <label for="avaliacaoOtimo">Otimo</label>
-            <input type='radio' name="avaliacao" id="avaliacaoOtimo" />
+            <div>
+                <input type='radio' name="avaliacao"  id="avaliacaoOtimo" />
+                <label for="avaliacaoOtimo">Otimo</label>                
+            </div>
 
             <label for="avaliacaoMedio">Médio</label>
             <input type='radio' name="avaliacao" id="avaliacaoMedio" />
 
             <label for="avaliacaoFraco">Fraco</label>
             <input type='radio' name="avaliacao" id="avaliacaoFraco" />
+        </fieldset>
+
+        
+        <fieldset>
+            <label for="avaliacao">Estilo</label>
+            
+            <div>
+                <input type='radio' name="estilo"  id="estiloRock" />
+                <label for="estiloRock">Rock</label>                
+            </div>
+            <div>
+                <input type='radio' name="estilo" id="estiloPop" />
+                <label for="estiloPop">Pop</label>
+            </div>  
+            <div>
+                <input type='radio' name="estilo" id="estiloSertanejo" />
+                <label for="estiloSertanejo">Sertanejo</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <label >Qualidades</label>
+            <div>
+                <input type='checkbox' name="qualidade[]" id="qualidadeVoz" />
+                <label for="qualidadeVoz">Voz</label>
+            </div>
+            <div>
+                <input type='checkbox' name="qualidade[]" id="qualidadeLetra" />
+                <label for="qualidadeLetra">Letra</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <label >Efeitos na gente</label>
+            <div>
+                <input type='checkbox' name="adjetivosCalma" id="adjetivosCalma" />
+                <label for="adjetivosCalma">Calma</label>
+            </div>
+            <div>
+                <input type='checkbox' name="adjetivosRelaxante" id="adjetivosRelaxante" />
+                <label for="adjetivosRelaxante">Relaxante</label>
+            </div>
         </fieldset>
         <div>
             <label for="nomeArtista">Nome do Artista</label>
@@ -92,6 +134,7 @@
         </div>   
 
         <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
 
     </form>
 </body>
